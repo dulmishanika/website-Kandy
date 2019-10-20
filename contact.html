@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="d.html">Home</a>
+  <a href="About.html"> About</a>
+  <div class="dropdown">
+  
+   
+     <button class="dropbtn">Places 
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+      <a href="Temple of Tooth.html">Temple of Tooth</a>
+      <a href="Peradeniya botanical garden.html">Peradeniya botanical garden</a>
+      <a href="University of peradeniya.html">University of peradeniya</a>
+      <a href="ambuluwawa temple.html">Ambuluwawa temple</a>
+    
+
+     </div>
+    </div>
+  <a href="Contact.html">Contact</a>
+  <a href="Hotel.html">Hotels</a>
+ 
+  <input type="text" placeholder="Search..">
+</div>
+
+<div style="padding-left:16px">
+  <h2>Beautiful Kandy</h2>
+  
+</div>
+
+</body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="a2.jpg" style=width:100%>
+  <div class="text">Temple of Tooth</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="a7.jpg" style=width:100%>
+  <div class="text">University of peradeniya</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="a8.jpg" style=width:100%>
+  <div class="text">peradeniya botanical garden</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script><table  border="5" width="1200" height="1000" bgcolor="white" align="center">
+ 
+  <tr>
+    <td><h2>Temple of Tooth</h2></td>
+<td>    
+<u>Address:</u><br><br>
+
+Sri Dalada Maligawa<br>
+Sri Dalada Veediya,Kandy<br>
+Central 20000 Sri Lanka.<br><br>
+<u>Geographical Location</u>
+
+80.6386° E, 7.2939° N.<br><br>
+<u>Telephone</u><br><br>
+
++94 812 234 226, +94 812 205 839<br><br>
+<u>Fax</u><br><br>
+
++94 812 205 901, +94 812 236 201<br><br>
+<u>E-mail</u><br><br>
+
+info@sridaladamaligawa.lk
+</td>
+    
+  </tr>
+  <tr>
+    <td><h2>Peradeniya botanical garden</h2></td>
+<td>    
+   <u>Organization Information</u><br><br>
+
+
+Department of National Botanic Gardens,
+P O Box 14, Peradeniya,
+Sri Lanka, 20400<br><br>
+
+Dr. D.S.A. Wijesundara, Director General<br><br>
+<u>Telephones:</u><br><br>Director General +94-81-2388238, General +94812388654<br><br>
+<u>Fax Nos:</u><br><br>+94-81-2388238<br><br>
+<u>Email: </u><br><br>dirnbg@sltnet.lk<br><br>
+<u>Website:</u><br><br> http://botanicgardens.gov.lk/<br><br>
+    </td>
+   
+  </tr>
+  <tr>
+    <td><h2>University of Peradeniya</h2></td>
+    <td>
+
+    <u>Telephone :</u><br><br> +94 81 238 8301 <br><br> +94 81 238 8302<br><br> +94 81 238 8303<br><br> +94 81 238 8304<br><br> +94 81 238 8305<br><br> +94 81 239 0000<br><br> +94 81 239 2000<br><br> +94 81 239 2001<br><br>
+    <u>Fax :</u><br><br> +94 81 238 8102<br><br>
+
+<u>CHANCELLOR</u><br><br>
+Professor K M de Silva<br><br>
+
+<u>VICE CHANCELLOR</u><br><br>
+Professor Upul B.Dissanayake<br>
+Phone: +94 81 2392300<br>
+E-mail: vc@pdn.ac.lk<br><br>
+
+<u>DEPUTY VICE-CHANCELLOR</u><br><br>
+Professor S.H.P. Parakrama Karunaratne<br>
+Phone: +94 81 239 2304<br>
+E-mail: dvc@pdn.ac.lk<br><br>
+</td>
+  
+  </tr>
+    <tr>
+    <td><h2>Ambuluwawa Temple</h2></td>
+    <td><u>Address:</u><br><br> Ambuluwawa Trigonometrical Station,<br> Ambuluwaawa ICC Road<br><br>
+<u>Phone:</u><br><br> 0387 538 880</td>
+ 
+  </tr>
+</table>
+
+  <table border="0" width="1200" height="170" bgcolor="grey" align="center">
+    <br><br><hr>
+      <td width="400"><font color="blue" size="4" align="right"><br>
+        
+   
+
+  <tr>
+<td><b> More Details:</b><br>Telephone No:   0812278213<br>E-Mail:      kandysrilankavisit@gmail.com<br>Addres:     128/2,Yatinuwara road,kandy. </td>
+</td>
+<td width="400"><font color="black" size="4">Give us your feedback<br><br></font>
+<form border="black"><font color="black">
+  
+First Name: <input type="text"><br>
+Last Name: <input type="text"><br>
+Comments: <input type="text"><br>
+  <input type="submit" value="submit">
+
+ </font>
+</form>
+      </div></td>
+<td>
+
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style aligin="center">
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+
+}
+
+
+  </tr>
+</table>
+</style>
+
+<body>
+
+<h2> Social Media</h2>
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-skype"></a>
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
